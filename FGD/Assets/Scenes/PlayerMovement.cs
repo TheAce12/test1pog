@@ -7,6 +7,7 @@ public class PlayerMovement : MonoBehaviour
     public CharacterController2D controller;
     public Animator animator;
     public float runSpeed = 100f;
+    public float dashSpeed = 200f;
     bool jump = false;
     bool crouch = false;
     float horizontalMove = 0;
@@ -16,7 +17,7 @@ public class PlayerMovement : MonoBehaviour
 
         animator.SetFloat("Speed", Mathf.Abs(horizontalMove));
 
-        if (Input.GetKeyDown(KeyCode.W))
+        if (Input.GetButtonDown("Jump"))
         {
             jump = true;
             animator.SetBool("Jump", true);
