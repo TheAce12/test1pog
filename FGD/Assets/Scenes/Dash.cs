@@ -19,15 +19,15 @@ public class Dash : MonoBehaviour
     void Update()
     {
         if(playerDirection == 0){
-            if(Input.GetKeyDown(KeyCode.A) && Input.GetKeyDown(KeyCode.Q)){
+            if(Input.GetKeyDown(KeyCode.A)){
                 playerDirection = 1;
-            }else if(Input.GetKeyDown(KeyCode.D) && Input.GetKeyDown(KeyCode.Q))
+            }else if(Input.GetKeyDown(KeyCode.D))
             {
                 playerDirection = 2;
-            }else if (Input.GetKeyDown(KeyCode.W) && Input.GetKeyDown(KeyCode.Q))
+            }else if (Input.GetKeyDown(KeyCode.W))
             {
                 playerDirection = 3;
-            }else if (Input.GetKeyDown(KeyCode.S) && Input.GetKeyDown(KeyCode.Q))
+            }else if (Input.GetKeyDown(KeyCode.S))
             {
                 playerDirection = 4;
             }
