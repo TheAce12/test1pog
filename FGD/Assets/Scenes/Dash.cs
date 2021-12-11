@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Dash : MonoBehaviour
 {
+    public Animator animator;   
     private Rigidbody2D rb;
     float nextDashTime = 0f;
     public float dashSpeed = 200f;
@@ -20,15 +21,19 @@ public class Dash : MonoBehaviour
     {
         if(playerDirection == 0){
             if(Input.GetKeyDown(KeyCode.A)){
+                animator.SetBool("Dashing", true);
                 playerDirection = 1;
             }else if(Input.GetKeyDown(KeyCode.D))
             {
+                animator.SetBool("Dashing", true);
                 playerDirection = 2;
             }else if (Input.GetKeyDown(KeyCode.W))
             {
+                animator.SetBool("Dashing", true);
                 playerDirection = 3;
             }else if (Input.GetKeyDown(KeyCode.S))
             {
+                animator.SetBool("Dashing", true);
                 playerDirection = 4;
             }
         }else{

@@ -128,22 +128,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 8671601222833813042, guid: 058ade56de474eb41a9ab3f223b9353f, type: 3}
   m_PrefabInstance: {fileID: 3695617072677259772}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &81085036
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 81085035}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a27712e026fc34f41a49feafee54d8bf, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  controller: {fileID: 81085037}
-  animator: {fileID: 0}
-  runSpeed: 100
-  dashSpeed: 200
 --- !u!114 &81085037
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -217,8 +201,27 @@ Rigidbody2D:
   m_Material: {fileID: 6200000, guid: 33a4a62333f46e74ea6b57c94caa9d01, type: 2}
   m_Interpolate: 0
   m_SleepingMode: 1
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
   m_Constraints: 0
+--- !u!95 &81085040
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 81085035}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: bfe96a647aba86146b07e59377ab52d7, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!4 &81085041 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4046079033712115566, guid: 058ade56de474eb41a9ab3f223b9353f, type: 3}
@@ -236,6 +239,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e2d7effb0eaf9c14a8bffa9a2fd07abb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  animator: {fileID: 81085040}
   dashSpeed: 50
   startDashTime: 0.1
 --- !u!114 &81085044
@@ -333,7 +337,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 6.8317685
+  orthographic size: 8.756102
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
