@@ -21,19 +21,19 @@ public class Dash : MonoBehaviour
     {
         if(playerDirection == 0){
             if(Input.GetKeyDown(KeyCode.A)){
-                animator.SetBool("Dashing", true);
+                animator.SetBool("Dash", true);
                 playerDirection = 1;
             }else if(Input.GetKeyDown(KeyCode.D))
             {
-                animator.SetBool("Dashing", true);
+                animator.SetBool("Dash", true);
                 playerDirection = 2;
             }else if (Input.GetKeyDown(KeyCode.W))
             {
-                animator.SetBool("Dashing", true);
+                animator.SetBool("Dash", true);
                 playerDirection = 3;
             }else if (Input.GetKeyDown(KeyCode.S))
             {
-                animator.SetBool("Dashing", true);
+                animator.SetBool("Dash", true);
                 playerDirection = 4;
             }
         }else{
@@ -55,5 +55,23 @@ public class Dash : MonoBehaviour
             }
         }
     }
-
+    public void DashStop()
+    {
+        if (Input.GetKeyUp(KeyCode.A))
+        {
+            animator.SetBool("Dash", false);
+        }
+        else if (Input.GetKeyUp(KeyCode.D))
+        {
+            animator.SetBool("Dash", false);
+        }
+        else if (Input.GetKeyUp(KeyCode.W))
+        {
+            animator.SetBool("Dash", false);
+        }
+        else if (Input.GetKeyUp(KeyCode.S))
+        {
+            animator.SetBool("Dash", false);
+        }
+    }
 }
