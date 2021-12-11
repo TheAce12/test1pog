@@ -354,6 +354,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1484110726}
     - target: {fileID: 3807865520207720568, guid: 49553c74140d7e4409da680410945caf, type: 3}
+      propertyPath: inamicRange
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3807865520207720568, guid: 49553c74140d7e4409da680410945caf, type: 3}
       propertyPath: enemyLayer.m_Bits
       value: 8
       objectReference: {fileID: 0}
@@ -371,7 +375,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4591339349797880990, guid: 49553c74140d7e4409da680410945caf, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -3.98
+      value: -3.53
       objectReference: {fileID: 0}
     - target: {fileID: 4591339349797880990, guid: 49553c74140d7e4409da680410945caf, type: 3}
       propertyPath: m_LocalPosition.y
@@ -443,7 +447,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1484110725}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.37, y: -0.8, z: 0}
+  m_LocalPosition: {x: -0.19, y: -0.42, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 104501768}
