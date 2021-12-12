@@ -54,6 +54,7 @@ public class Dash : MonoBehaviour
                 }
             }
         }
+        DashStop();
     }
     public void DashStop()
     {
