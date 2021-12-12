@@ -21,7 +21,7 @@ public class Dash : MonoBehaviour
     {
         if(playerDirection == 0){
             if(Input.GetKeyDown(KeyCode.A)){
-                animator.SetBool("Dash", true);
+                animator.SetBool("Dash stanga", true);
                 playerDirection = 1;
             }else if(Input.GetKeyDown(KeyCode.D))
             {
@@ -60,7 +60,7 @@ public class Dash : MonoBehaviour
     {
         if (Input.GetKeyUp(KeyCode.A))
         {
-            animator.SetBool("Dash", false);
+            animator.SetBool("Dash stanga", false);
         }
         else if (Input.GetKeyUp(KeyCode.D))
         {
