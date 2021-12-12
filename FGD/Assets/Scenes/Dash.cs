@@ -29,11 +29,11 @@ public class Dash : MonoBehaviour
                 playerDirection = 2;
             }else if (Input.GetKeyDown(KeyCode.W))
             {
-                animator.SetBool("Dash", true);
+                animator.SetBool("Dash up", true);
                 playerDirection = 3;
             }else if (Input.GetKeyDown(KeyCode.S))
             {
-                animator.SetBool("Dash", true);
+                animator.SetBool("Dash down", true);
                 playerDirection = 4;
             }
         }else{
@@ -68,11 +68,11 @@ public class Dash : MonoBehaviour
         }
         else if (Input.GetKeyUp(KeyCode.W))
         {
-            animator.SetBool("Dash", false);
+            animator.SetBool("Dash up", false);
         }
         else if (Input.GetKeyUp(KeyCode.S))
         {
-            animator.SetBool("Dash", false);
+            animator.SetBool("Dash down", false);
         }
     }
 }
