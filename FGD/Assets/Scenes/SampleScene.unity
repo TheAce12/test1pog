@@ -15176,7 +15176,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3807865520207720547, guid: 49553c74140d7e4409da680410945caf, type: 3}
       propertyPath: m_GravityScale
-      value: 40
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 3807865520207720568, guid: 49553c74140d7e4409da680410945caf, type: 3}
       propertyPath: m_Enabled
@@ -15204,7 +15204,7 @@ PrefabInstance:
       objectReference: {fileID: 660550597}
     - target: {fileID: 3807865520207720574, guid: 49553c74140d7e4409da680410945caf, type: 3}
       propertyPath: dashSpeed
-      value: 40
+      value: 45
       objectReference: {fileID: 0}
     - target: {fileID: 3807865520207720574, guid: 49553c74140d7e4409da680410945caf, type: 3}
       propertyPath: startDashTime
