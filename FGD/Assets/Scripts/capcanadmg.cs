@@ -12,7 +12,8 @@ public class capcanadmg : MonoBehaviour
     {
     Collider2D[] enemieshit = Physics2D.OverlapCircleAll(inamicPoint.position, inamicRange, enemyLayer);
         
-        foreach(Collider2D enemy in enemieshit){
+        foreach(Collider2D enemy in enemieshit)
+        {
             Destroy(gameObject);
             Debug.Log("Este atacat");
         }
